@@ -16,7 +16,7 @@ body {
   display: flex;
 }
 .box-input {
-  min-width: 40%;
+  min-width: 30%;
   min-height: 50%;
   margin: 2%;
 }
@@ -42,4 +42,8 @@ body {
 }
 a {
   color: #00B7FF;
+}
+.copy {
+  display: none;
+  margin: 2% 0;
 }

@@ -27,7 +27,16 @@ function write(list) {
   
   html_code = html_code.concat("<div>]</div>");
   select('.text-output').innerHTML = html_code;
+  select('.text-output').style.backgroundColor = "#EEE";
+  select('.copy').style.display = "inline-block"
 }
+function copy() {
+  let copyText = select('.text-output').innerText;
+  navigator.clipboard.writeText(copyText);
+  select('.text-output').style.backgroundColor = "#FFF"
+  select('.copy').style.display = "none"
+}
+
 function select(param) {
   return document.querySelector(param)
 }
