@@ -30,17 +30,15 @@ body {
   min-height: 50%;
   border: 1px solid black;
   margin: 2%;
+  padding: 1%;
   overflow-y: auto;
   font-size: 0.7rem;
 }
-.m-1 {
-  margin-left: 10px;
-}
 .m-2 {
-  margin-left: 20px;
+  margin-left: 15px;
 }
 .m-3 {
-  margin-left: 35px;
+  margin-left: 30px;
 }
 a {
   color: #00B7FF;

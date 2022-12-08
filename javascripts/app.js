@@ -15,7 +15,7 @@ function nameDestructuring(param) {
   }
 }
 function write(list) {
-  let html_code = "<div class='m-1'>pollingStations: [</div>";
+  let html_code = "<div>pollingStations: [</div>";
   list.forEach(item => {
     html_code = html_code.concat(`
       <div class='m-2'>{</div>
@@ -25,9 +25,9 @@ function write(list) {
     `)
   });
   
-  html_code = html_code.concat("<div class='m-1'>]</div>");
+  html_code = html_code.concat("<div>]</div>");
   select('.text-output').innerHTML = html_code;
 }
 function select(param) {
-  document.querySelector(param)
+  return document.querySelector(param)
 }
