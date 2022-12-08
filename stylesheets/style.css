@@ -14,11 +14,12 @@ body {
   height: 100%;
   overflow: hidden;
   display: flex;
+  justify-content: space-around;
+  padding: 1%;
 }
 .box-input {
   width: 35%;
   min-height: 50%;
-  margin: 2%;
 }
 .text-input {
   width: 100%;
@@ -29,7 +30,6 @@ body {
   min-width: 50%;
   min-height: 50%;
   border: 1px solid black;
-  margin: 2%;
   padding: 1%;
   overflow-y: auto;
   font-size: 0.7rem;
