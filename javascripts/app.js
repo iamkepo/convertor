@@ -1,7 +1,7 @@
 function convert () {
   let result = select('.text-input').value.split('\n').map((item, i)=> (
     {
-      name: nameDestructuring(item),
+      name: item,
       number: parseInt(select('.number-input').value)+i,
     }
   ))
@@ -9,7 +9,9 @@ function convert () {
 }
 function nameDestructuring(param) {
   if(param.split('.').length > 1)  {
-    return param.split('').map((item, i)=> ( (i > param.split('.')[0].length) ? item : '' )).join(',').replaceAll(',', '')
+    return param.split('').map((item, i)=> {
+      return (i > param.split('.')[0].length) ? item : ''
+    }).join(',').replaceAll(',', '')
   } else {
     return param
   }
