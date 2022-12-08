@@ -36,7 +36,13 @@ function copy() {
   select('.text-output').style.backgroundColor = "#FFF"
   select('.copy').style.display = "none"
 }
-
+function reset() {
+  select('.text-output').style.backgroundColor = "#FFF";
+  select('.text-output').innerHTML = '';
+  select('.text-input').value = '';
+  select('.number-input').value = null;
+  select('.copy').style.display = "none";
+}
 function select(param) {
   return document.querySelector(param)
 }
